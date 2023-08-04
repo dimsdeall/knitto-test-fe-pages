@@ -13,13 +13,12 @@ function Navbar() {
   ];
 
   const pathname = usePathname();
-  
 
   return (
     <header className="bg-cyan-500 px-5 sm:10 md:px15 lg:px-24 py-2 text-white">
       <div className="flex flex-row justify-between items-center">
         <div className="text-2xl font-bold">
-          <a href="/">Knitto Test</a>
+          <Link href={"/"}>Knitto Test</Link>
         </div>
 
         <div className="flex gap-x-2">
