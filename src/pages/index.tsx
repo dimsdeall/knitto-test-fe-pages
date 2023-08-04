@@ -26,8 +26,8 @@ export default function Home() {
       url: "https://redux-toolkit.js.org/rtk-query/overview",
     },
     {
-      name: "Firebase Hosting",
-      url: "https://firebase.google.com/docs/hosting",
+      name: "Vercel",
+      url: "https://vercel.com",
     },
   ];
 
@@ -103,7 +103,7 @@ export const getStaticProps = wrapper.getStaticProps(
     await Promise.all(store.dispatch(getRunningQueriesThunk()));
     return {
       props: {},
-      revalidate: 10, // In seconds
+      revalidate: 3, // In seconds
     };
   }
 );
